@@ -23,11 +23,11 @@ cd ../../
 pnpm run tauri dev
 ```
 
-# 動作確認環境  
+# 動作確認済み環境  
 
+* Windows 11 (msvc(Visual Studio 2022))
 * MacOS Sonoma (clang15)
-
-(Windows、Liunxは確認中。多分動くとは思います…)
+* Arch Linux (clang18 & libstdc++. 要webkit2gtk)
 
 # 備考  
 
