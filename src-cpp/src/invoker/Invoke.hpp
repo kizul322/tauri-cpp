@@ -36,7 +36,7 @@ static T Convert(std::span<const unsigned char>& data) {
   const auto result = ReadLittleEndianValue<std::uint64_t>(data, data_len);
   data = data.subspan(data_len);
 
-  return result;
+  return static_cast<T>(result);
 }
 
 template <typename... Args>

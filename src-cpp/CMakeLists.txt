@@ -4,13 +4,13 @@ project(tauri-cpp)
 
 if(CMAKE_CXX_COMPILER_FRONTEND_VARIANT STREQUAL "GNU")
     set(CMAKE_CXX_STANDARD 23)
-    set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g3")
-    #set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g3 -fsanitize=undefined,address,leak")
+    set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g3 -Wall")
+    #set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g3 -Wall -fsanitize=undefined,address,leak")
     set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 elseif(CMAKE_CXX_COMPILER_FRONTEND_VARIANT STREQUAL "MSVC")
     set(CMAKE_CXX_STANDARD 23)
-    set(CMAKE_CXX_FLAGS_DEBUG "/Od /Zi")
-    set(CMAKE_CXX_FLAGS_RELEASE "/O2")
+    set(CMAKE_CXX_FLAGS_DEBUG "/Od /Zi /MD")
+    set(CMAKE_CXX_FLAGS_RELEASE "/O2 /MD")
 endif()
 
 # とりあえず、ここで適当にすべて対象としてしまう（subdirに分割しない）
