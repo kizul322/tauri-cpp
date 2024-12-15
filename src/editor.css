@@ -1,0 +1,36 @@
+.editor-body {
+    font-family: 'Courier New', Courier, monospace;
+    max-height: 95vh;
+    box-sizing: border-box;
+    white-space: pre;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.hex-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.offset {
+    width: 80px;
+    color: #888;
+}
+
+.hex-values {
+    display: flex;
+    margin-right: 20px;
+}
+
+.hex-value {
+    width: 25px;
+    text-align: center;
+}
+
+.ascii-values {
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}

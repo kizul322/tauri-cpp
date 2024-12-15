@@ -1,0 +1,8 @@
+---
+Language:        Cpp
+BasedOnStyle:  Google
+AlignOperands: Align
+PenaltyBreakAssignment: 10000
+CommentPragmas : ".*"
+AllowShortFunctionsOnASingleLine: None
+---
